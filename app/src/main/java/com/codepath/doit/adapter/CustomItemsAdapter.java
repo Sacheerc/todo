@@ -17,8 +17,12 @@ import com.codepath.doit.activities.MainActivity;
 import com.codepath.doit.models.Item;
 import com.codepath.doit.utils.Utils;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 
 public class CustomItemsAdapter extends ArrayAdapter<Item> implements Filterable {
 
@@ -69,6 +73,16 @@ public class CustomItemsAdapter extends ArrayAdapter<Item> implements Filterable
         return position;
     }
 
+    public static String getStringFromDate1 (Date date) throws ParseException {
+        DateFormat formatter = new SimpleDateFormat("EEE, d MMM yyyy");
+        return formatter.format(date);
+    }
+
+    public static String getStringFromDate2 (Date date) throws ParseException {
+        DateFormat formatter = new SimpleDateFormat("EEE, d MMM yyyy  HH:mm:ss a");
+        return formatter.format(date);
+    }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater vi = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -86,9 +100,17 @@ public class CustomItemsAdapter extends ArrayAdapter<Item> implements Filterable
             if (!TextUtils.isEmpty(Utils.getStringFromDate(item.dueDate))) {
                 dueDate.setVisibility(View.VISIBLE);
                 if(!TextUtils.isEmpty(item.dueTime)) {
-                    dueDate.setText(Utils.getStringFromDateAndTime(item.dueDate));
+                    try {
+                        dueDate.setText(getStringFromDate2(item.dueDate));
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 } else {
-                    dueDate.setText(Utils.getStringFromDate(item.dueDate));
+                    try {
+                        dueDate.setText(getStringFromDate1(item.dueDate));
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
             } else {
                 dueDate.setVisibility(View.GONE);

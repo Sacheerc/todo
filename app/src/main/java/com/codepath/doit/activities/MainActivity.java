@@ -239,13 +239,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
                         PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "en").commit();
                         setLangRecreate("en");
                         return;
-                    case 1: //Hindi
+                    case 2: //Hindi
                         PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "hi").commit();
                         setLangRecreate("hi");
                         return;
-                    case 2: //Kannada
-                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "kn").commit();
-                        setLangRecreate("kn");
+                    case 1: //Kannada
+                        PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "si").commit();
+                        setLangRecreate("si");
                         return;
                     default: //By default set to english
                         PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putString("LANG", "en").commit();

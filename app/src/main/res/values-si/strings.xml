@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MemoryMate</string>
+    <string name="add_button">Add</string>
+    <string name="save_button">Save</string>
+    <string name="priority_prompt">Priority</string>
+    <string name="share_menu">බෙදා හැරීම</string>
+    <string name="edit_item_text"> Edit Item Below</string>
+    <string name="search_hint">ඉඟිය</string>
+    <string name="quick_add_hint">සඳහන් කිරීමේ ඉඟිය</string>
+    <string name="mic_image">Talk to add task</string>
+    <string name="click_image">Click to add task</string>
+    <string name="low">සාමාන්‍ය</string>
+    <string name="medium">වැදගත්</string>
+    <string name="high">ඉතා වැදගත්</string>
+    <string-array name="priority_array">
+        <item>සාමාන්‍ය</item>
+        <item>වැදගත්</item>
+        <item>ඉතා වැදගත්</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="task_to_be_done">කළ යුතු දේ</string>
+    <string name="enter_task_here">මෙහි සටහන් කරන්න</string>
+    <string name="due_date">අදාල දිනය</string>
+    <string name="date_not_set">දිනයක් නොමැත</string>
+    <string name="time_not_set">වේලාවක් නොමැත</string>
+    <string name="enter_priority">ප්‍රමුඛතාවය</string>
+    <string name="click_to_set_date">Click to set date</string>
+    <string name="click_to_set_time">Click to set time</string>
+    <string name="cancel_date">cancel date</string>
+    <string name="cancel_time">cancel time</string>
+    <string name="search_task">සොයන්න</string>
+    <string name="save_item">Save</string>
+    <string name="share_item">බෙදා හැරීම</string>
+    <string name="delete_items">delete items</string>
+    <string name="language_setting">භාෂාව</string>
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>සිංහල</item>
+        <!--<item>සිංහල</item>-->
+    </string-array>
+</resources>

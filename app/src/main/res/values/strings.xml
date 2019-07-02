@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">To do</string>
+    <string name="app_name">MemoryMate</string>
     <string name="add_button">Add</string>
     <string name="save_button">Save</string>
     <string name="priority_prompt">Priority</string>
@@ -36,7 +36,7 @@
     <string name="delete_items">delete items</string>
     <string-array name="lang_select">
         <item>English</item>
-        <item>हिन्दी</item>
-        <item>ಕನ್ನಡ</item>
+        <item>සිංහල</item>
+        <!--<item>ಕನ್ನಡ</item>-->
     </string-array>
 </resources>

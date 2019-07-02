@@ -34,6 +34,8 @@
     <string name="share_item">Share</string>
     <string name="language_setting">Change language</string>
     <string name="delete_items">delete items</string>
+    <string name="loading_text">Loading MemoryMate Application</string>
+    <string name="loading_app_text">Loading MemoryMate Application...</string>
     <string-array name="lang_select">
         <item>English</item>
         <item>සිංහල</item>
